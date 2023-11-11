@@ -1,5 +1,7 @@
+#Piotr Niedziałek
 import unidecode
 import re
+
 def load_file(path, n):
     with open(
         path,
@@ -15,5 +17,5 @@ def load_file(path, n):
     # for i in range(0,len(list_of_words)):
     #     list_of_words[i]=re.sub(r'\W+', '', list_of_words[i])
 
-    # print(list_of_words)
+    #print(list_of_words)
     return list_of_words

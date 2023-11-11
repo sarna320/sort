@@ -1,3 +1,4 @@
+#Paweł Sarnacki
 import matplotlib.pyplot as plt
 
 

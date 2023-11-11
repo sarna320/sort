@@ -1,3 +1,4 @@
+#Piotr Niedziałek
 def test(A, w):
     w_sorted = sorted(w)
     temp = True
