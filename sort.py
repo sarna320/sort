@@ -49,7 +49,7 @@ def selection_sort(list):
 
 
 def merge_sort(list):
-    start = time.process_time()
+    
     if len(list) > 1:
         mid = len(list) // 2
         left_half = list[:mid]
@@ -73,5 +73,4 @@ def merge_sort(list):
             list[k] = right_half[j]
             j += 1
             k += 1
-    stop = time.process_time()
-    return stop - start
+

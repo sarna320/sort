@@ -25,10 +25,14 @@ def main():
             elif key == "Insertion sort":
                 Algorithm_time[key][1], t = insertion_sort(words)  # for Insertion algorithm
             elif key == "Merge sort":
-                Algorithm_time[key][1] = words[:]  # because of recursive function we need copy before
-                t = merge_sort(Algorithm_time[key][1])  # for Merge algorithm
+                Algorithm_time[key][1] = words[:]  # because of recursive function we need copy before and count time outside of function body
+                start = time.process_time()
+                merge_sort(Algorithm_time[key][1])  # for Merge algorithm
+                stop = time.process_time()
+                t=stop-start
             Algorithm_time[key][0].append(t)
             print(f"Time of execution in seconds for {key} algorithm:{t}")
+            #print(Algorithm_time[key][1])
 
     for key in Algorithm_time:
         make_plot(number_of_words, Algorithm_time[key][0], key)  # making individual plot
